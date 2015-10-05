@@ -1,0 +1,11 @@
+def main()  
+{
+    n, nRebuilt : int;
+    msg : string;    n = 51423;
+    nRebuilt = (n / 2) * 2;
+    if ( n == nRebuilt )
+       msg = "par";
+    else
+       msg = "impar";
+       print(msg);
+}

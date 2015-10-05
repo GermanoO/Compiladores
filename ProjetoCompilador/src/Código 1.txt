@@ -1,0 +1,24 @@
+def main()
+ {
+    x, y : int;
+    m    : int;
+    x = 120;
+    y = 640;  
+    m = mdcEuclides(x, y);
+ 
+ print("mdc(");
+ print( x );
+ print(",");
+ print( y );
+ 
+ print( m );
+ }
+ def mdcEuclides (x: int, y: int) : int 
+{
+ if (y == 0) {
+ return x;
+ }
+ else {
+ return mdcEuclides(y, x % y);
+ }
+}
